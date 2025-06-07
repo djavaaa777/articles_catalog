@@ -1,0 +1,32 @@
+{% extends "main/layout.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block main %}
+  <div class="dashboard">
+    <h1>👋 Hello, {{ user.username }}</h1>
+    <p>Add a new article below:</p>
+
+    {% if messages %}
+      {% for message in messages %}
+        <div class="message {{ message.tags }}">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+
+    <form method="POST">
+      {% csrf_token %}
+      <label>Title:</label>
+      {{ form.title }}
+
+      <label>Preview:</label>
+      {{ form.preview }}
+
+      <label>Content:</label>
+      {{ form.content }}
+
+      <label>Publication Date:</label>
+      {{ form.date }}
+
+      <button type="submit" class="btn btn-large">➕ Add Article</button>
+    </form>
+  </div>
+{% endblock %}

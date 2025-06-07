@@ -1,0 +1,30 @@
+{% extends "main/layout.html" %}
+{% block title %}User Reviews{% endblock %}
+
+{% block main %}
+<div class="reviews-page">
+  <h1>💬 What our users say</h1>
+
+  {% if user.is_authenticated %}
+    <form method="POST" class="review-form">
+      {% csrf_token %}
+      {{ form.content }}
+      <button type="submit" class="btn btn-large">Submit Review</button>
+    </form>
+  {% else %}
+    <p class="note">🔒 <a href="{% url 'login' %}">Log in</a> to leave your own feedback.</p>
+  {% endif %}
+
+  <hr>
+
+  {% for review in all_reviews %}
+    <div class="review-box">
+      <strong>{{ review.user.username }}</strong>
+      <small>{{ review.date_created|date:"F j, Y, H:i" }}</small>
+      <p>{{ review.content|linebreaks }}</p>
+    </div>
+  {% empty %}
+    <p>No reviews yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}

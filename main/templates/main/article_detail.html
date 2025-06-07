@@ -1,0 +1,12 @@
+{% extends "main/layout.html" %}
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block main %}
+  <div class="article-detail">
+    <h1>{{ article.title }}</h1>
+    <p class="text-muted"><small>🗓 Published on {{ article.date }}</small></p>
+    <p>{{ article.content|linebreaks }}</p>
+
+    <a href="{% url 'main' %}" class="btn">← Back to Home</a>
+  </div>
+{% endblock %}

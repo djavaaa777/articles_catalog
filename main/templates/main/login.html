@@ -1,0 +1,28 @@
+{% extends "main/layout.html" %}
+{% block title %}Login{% endblock %}
+
+{% block main %}
+<div class="register-page">
+  <h1>Login to Your Account</h1>
+
+  {% if form.errors %}
+    <p class="error">❌ Invalid username or password.</p>
+  {% endif %}
+
+  <form method="POST">
+    {% csrf_token %}
+
+    <label for="id_username">Username</label>
+    {{ form.username }}
+
+    <label for="id_password">Password</label>
+    {{ form.password }}
+
+    <button type="submit" class="btn btn-large">Login</button>
+  </form>
+
+  <div class="register-link">
+    <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+  </div>
+</div>
+{% endblock %}

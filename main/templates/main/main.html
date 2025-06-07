@@ -1,0 +1,45 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Main Page{% endblock %}
+
+{% block main %}
+  <h1 class="page-title">🚀 Latest Programming Articles</h1>
+
+  {% if top_article %}
+    <div class="top-article-banner">
+      <div class="top-article-text">
+        <h2>🔥 Top Article of the Week:</h2>
+        <h1>{{ top_article.title }}</h1>
+        <p class="date">{{ top_article.date }}</p>
+        <p class="preview">{{ top_article.preview }}</p>
+        <a href="{% url 'article_detail' top_article.pk %}" class="btn btn-large">Read Full Article</a>
+      </div>
+    </div>
+  {% endif %}
+
+  {% for el in articles %}
+    <div class="article-card">
+      <div class="article-header">
+        <h3>{{ el.title }}</h3>
+        <small>{{ el.date }}</small>
+      </div>
+      <p class="preview">{{ el.preview }}</p>
+      <a href="{% url 'article_detail' el.pk %}" class="btn">Read more</a>
+    </div>
+  {% empty %}
+    <p>No articles yet.</p>
+  {% endfor %}
+
+  <div class="about-banner">
+  <div class="about-text">
+    <h2>🎯 Curious About CodeZone?</h2>
+    <p>
+      Learn why we created this platform and what kind of content we want to share with developers like you.
+      Whether you're just starting or already writing APIs — we’ve got something for you.
+    </p>
+    <a href="{% url 'about' %}" class="btn about-btn">Read About Us →</a>
+  </div>
+</div>
+
+
+{% endblock %}
