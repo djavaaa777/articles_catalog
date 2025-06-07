@@ -447,7 +447,7 @@ html, body {
 }
 
 .page-wrapper {
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
