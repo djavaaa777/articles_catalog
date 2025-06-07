@@ -440,3 +440,13 @@ a[href*="reviews"]:hover {
   color: #0ea5e9;
   text-decoration: underline;
 }
+
+.login-page {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: 0;
+  margin-right: auto;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+}
