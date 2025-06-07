@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -194,10 +195,9 @@ body {
   padding: 20px;
   text-align: center;
   font-size: 0.95rem;
-  margin-top: 60px;
   border-top: 1px solid #333;
+  margin-top: auto;
 }
-
 
 .register-page {
   background-color: #1f1f1f;
@@ -272,6 +272,7 @@ body {
   color: #facc15;
   margin-bottom: 20px;
 }
+
 .dashboard form {
   margin-top: 20px;
 }
@@ -431,7 +432,7 @@ body {
 }
 
 a[href*="reviews"] {
-  color: #38bdf8; /* светло-голубой */
+  color: #38bdf8;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -441,13 +442,30 @@ a[href*="reviews"]:hover {
   text-decoration: underline;
 }
 
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .login-page {
   background-color: #1f1f1f;
   padding: 40px;
   border-radius: 10px;
   max-width: 500px;
-  margin-left: 0;
-  margin-right: auto;
+  width: 100%;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
 }
 
