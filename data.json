@@ -1,0 +1,107 @@
+[
+  {
+    "model": "main.article",
+    "pk": 1,
+    "fields": {
+      "title": "Introduction to Django",
+      "preview": "Django is a powerful Python framework for web development.",
+      "content": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.\r\n\r\nKey features of Django:\r\n- Built-in ORM for database interaction\r\n- Flexible template system\r\n- Powerful admin interface\r\n- Security features out of the box\r\n- Routing and middleware support\r\n\r\nThe first step is to create a Django project, then create apps within it, allowing for a well-structured architecture.",
+      "date": "2025-06-01"
+    }
+  },
+  {
+    "model": "main.article",
+    "pk": 2,
+    "fields": {
+      "title": "What is ORM in Django",
+      "preview": "ORM allows you to work with the database using Python code instead of raw SQL.",
+      "content": "ORM (Object-Relational Mapping) is a technique that lets you interact with the database by representing tables and records as Python objects.\r\n\r\nExample usage:\r\n```python\r\nfrom main.models import Article\r\nArticle.objects.all()\r\nArticle.objects.create(title=\"New article\", ...)\r\n\r\nWith ORM, you can reduce SQL code and avoid common database query mistakes.",
+      "date": "2025-05-13"
+    }
+  },
+  {
+    "model": "main.article",
+    "pk": 3,
+    "fields": {
+      "title": "Building Your First REST API with Django",
+      "preview": "Learn the basics of Django REST Framework and how to build a simple API.",
+      "content": "Django REST Framework (DRF) is a powerful toolkit for building Web APIs. In this article...",
+      "date": "2025-05-25"
+    }
+  },
+  {
+    "model": "main.article",
+    "pk": 4,
+    "fields": {
+      "title": "Python Tips Every Developer Should Know",
+      "preview": "A collection of useful Python tricks that will make your code cleaner and more efficient.",
+      "content": "Python is known for its simplicity, but there are hidden gems even experienced developers miss...",
+      "date": "2025-04-18"
+    }
+  },
+  {
+    "model": "main.article",
+    "pk": 5,
+    "fields": {
+      "title": "Understanding Git Rebase vs Merge",
+      "preview": "Rebase or merge? Understand the key differences and when to use each one.",
+      "content": "Git offers multiple ways to integrate changes from one branch into another...",
+      "date": "2025-05-15"
+    }
+  },
+  {
+    "model": "main.article",
+    "pk": 6,
+    "fields": {
+      "title": "Understanding Asynchronous Programming in Python",
+      "preview": "Async and await can greatly improve performance when working with I/O operations in Python.",
+      "content": "Asynchronous programming is a method that allows multiple operations to run concurrently in Python without creating multiple threads or processes.\r\n\r\nUsing `async def` functions and `await` expressions, you can make code non-blocking. It's especially useful when working with APIs, file operations, or databases.\r\n\r\nFor example:\r\n\r\n```python\r\nimport asyncio\r\n\r\nasync def say_hello():\r\n    await asyncio.sleep(1)\r\n    print(\"Hello, Async World!\")\r\n\r\nasyncio.run(say_hello())",
+      "date": "2025-06-02"
+    }
+  },
+  {
+    "model": "main.review",
+    "pk": 1,
+    "fields": {
+      "date_created": "2025-06-03 19:03:01.004835",
+      "user": 1,
+      "content": "Hello"
+    }
+  },
+  {
+    "model": "main.review",
+    "pk": 2,
+    "fields": {
+      "date_created": "2025-06-04 03:39:18.818976",
+      "user": 2,
+      "content": "\"This platform is a goldmine for aspiring developers! The articles are concise, up-to-date, and super practical. Loved the Django tutorials – helped me finally understand class-based views. Keep it up, team!\""
+    }
+  },
+  {
+    "model": "main.review",
+    "pk": 3,
+    "fields": {
+      "date_created": "2025-06-04 03:39:36.696881",
+      "user": 2,
+      "content": "\"Great resource! Clean design, structured content, and easy to follow. I bookmarked the React section immediately.\""
+    }
+  },
+  {
+    "model": "main.review",
+    "pk": 4,
+    "fields": {
+      "date_created": "2025-06-04 03:39:48.353653",
+      "user": 2,
+      "content": "\"I had zero backend experience, but the explanations here made it so much clearer. Thank you for making learning so approachable!\""
+    }
+  },
+  {
+    "model": "main.review",
+    "pk": 5,
+    "fields": {
+      "date_created": "2025-06-04 03:40:02.720597",
+      "user": 2,
+      "content": "\"The article quality is impressive. Would love to see more real-world examples or even video snippets.\""
+    }
+  }
+]
