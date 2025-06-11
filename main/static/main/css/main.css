@@ -497,3 +497,104 @@ html, body {
 .login-page button:hover {
   background-color: #e6b800;
 }
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .sidebar a,
+  .sidebar .logout-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+
+  .logout-form {
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .article-card,
+  .top-article-banner,
+  .login-page,
+  .register-page,
+  .dashboard,
+  .reviews-page,
+  .article-detail,
+  .about-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .btn,
+  .btn-large {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .top-article-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .top-article-text h2 {
+    font-size: 1rem;
+  }
+
+  .top-article-text .preview {
+    font-size: 1rem;
+  }
+
+  .site-footer {
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
