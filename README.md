@@ -2,7 +2,8 @@
 
 **CodeZone** is a simple Django-powered platform where registered users can publish articles and leave reviews on programming topics.
 
-🚀 Live Demo: [web-production-dda90.up.railway.app](https://web-production-dda90.up.railway.app)
+🚀 Live Demo: [javid777.pythonanywhere.com](https://javid777.pythonanywhere.com/)
+
 
 ---
 
@@ -13,7 +14,7 @@
 - 🔐 Registration & Login system
 - 🧑‍💻 Admin panel for content and user management
 - 🎨 Minimal custom frontend with emojis
-- ☁️ Deployed on [Railway](https://railway.app)
+- ☁️ Deployed on [PythonAnywhere](https://www.pythonanywhere.com/)  
 
 ---
 
